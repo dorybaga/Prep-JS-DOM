@@ -34,7 +34,11 @@ Give your element an id of "purr".  Next assign your element with the following 
 
 Append this newly created element to the bigBox element.*/
 
-var catBox2 = document
+var catBox2 = document.createElement('h2');
+catBox2.id = "purr";
+catBox2.innerHTML = 'audition for the next musical';
+bigBox.appendChild(catBox2);
+
 
 //Exercise 3
 /*Your objective is to display the following getBuckets array into the document. 
