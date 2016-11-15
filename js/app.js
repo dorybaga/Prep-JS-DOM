@@ -19,6 +19,8 @@ catBox.id = 'meow!';
 catBox.innerHTML = 'overcome its fear of cucumbers!';
 bigBox.appendChild(catBox);
 
+//accessing catBox as an object and reassigning the value with text or string.
+
 
 /*Helpful Hints:
 document.createElement creates an Element node
@@ -52,16 +54,17 @@ Append the "li" elements inside the "buckets" div that have been already created
 element.className is a property that sets or returns the class name of an element*/
 
 var getBuckets = ["Become more famous than that overrated fraud Garfield", "Visit Aoshima (aka Japan's Cat Island)", "Exhaust my entire 9 lives", "Pass DevLeague's coding challenge", "Become the next internet sensation", "eat tacos", "Buy Vic a bottle of Hendricks Gin" ];
+var bucketList;
+
 
 for (var i=0; i<getBuckets.length; i++) {
-	console.log(getBuckets[i]);
+	// console.log(getBuckets[i]); don't need; just to test in console.
 
-var bucketList = document.createElement('li');
-bucketList.className = 'daList';
-bucketList.innerHTML = getBuckets[i];
-buckets.appendChild(bucketList);
+	bucketList = document.createElement('li');
+	bucketList.className = 'daList';
+	bucketList.innerHTML = getBuckets[i];
+	buckets.appendChild(bucketList);
 }
-
 
 
 //Exerise 4
@@ -72,7 +75,9 @@ buckets.appendChild(bucketList);
 Declare a variable named changeList and assign it to the getElementsByTagName method.
 */
 
-
+var changeList = document.getElementsByTagName('li');
+console.log(changeList);
+changeList[0].innerHTML = 'i\'m coming for you felix!';
 
 
 
