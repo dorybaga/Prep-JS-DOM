@@ -86,6 +86,8 @@ changeList[0].innerHTML = 'i\'m coming for you felix!';
 
 "Exhaust my entire 9 lives" => "I got 1 life to live!"*/
 
+var changeListAgain = document.getElementsByClassName('daList');
+changeListAgain[2].innerHTML = 'i got 1 life to live!';
 
 
 
